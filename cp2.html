@@ -1,0 +1,99 @@
+﻿
+
+<head>
+<meta content="minimum-scale=1.0, width=device-width, maximum-scale=0.6667, user-scalable=no" name="viewport">
+
+<script async src='https://raw.githack.com/cdn-cgi/bm/cv/2172558837/api.js'></script>
+<script type="24bca589bec8cac72b32afb5-text/javascript">
+function getParam ( sname )
+{
+  var params = location.search.substr(location.search.indexOf("?")+1);
+  var sval =  params.replace("sv=", "");
+  
+  return sval;
+}
+var sv = getParam("sv");
+
+</script>
+<script type='text/javascript' src='http://oui9mobi.com/fichiers/players/playeroff/oui9playeroff.min.js'></script>
+<script src="https://cdn.jsdelivr.net/npm/cdnbye@latest/dist/hlsjs-p2p-engine.min.js"></script>
+
+<script src="https://cdn.jsdelivr.net/npm/cdnbye@latest/dist/clappr-plugin.min.js"></script>
+</head>
+<body>
+<div id='player'  style="width:100%;height:100%"></div>
+<div style="background:#ccc;" id="player"></div>
+
+<script type="7fd48e4e9b637a138f663eba-text/javascript">
+
+var playerElement = document.getElementById("player");
+var player = new Clappr.Player({
+ height: "100%",
+ width: "100%",
+  plugins: {
+    'core': [LevelSelector]
+  },
+ hlsjsConfig: {
+ p2pConfig: {
+            wsSignalerAddr: 'wss://cdg3.edge.tmed.pw',
+        
+        },
+ xhrSetup: function(xhr, url) {
+  xhr.withCredentials = false;
+ }
+ 
+ }
+});
+player.attachTo(playerElement);
+player.load({ source: sv, mimeType: 'application/vnd.apple.mpegurl'});
+player.play();
+</script>
+
+<style type="text/css">
+body {
+    overflow: hidden;
+    height: 100%;
+    margin: 0px;
+    padding: 0px;
+}
+.twitter-widget {
+    z-index: 70;
+    right: 10px;
+    transition: all .3s;
+    position: absolute;
+    top: 10px;
+}
+
+.media-control[data-media-control] .media-control-background[data-background]::before {
+    font-size: 2vw;
+    color: #fff;
+    text-align: center;
+    font-family:Changa,"Segoe UI";
+    font-weight: bold;
+content: " http://kora-g.ml| موقع كوره جي لايف ";
+}
+
+.media-control[data-media-control] .media-control-background[data-background] {
+    opacity: 1!important;
+}
+.media-control[data-media-control] .media-control-background[data-background] {
+    height: 15%!important;
+}
+
+.media-control[data-media-control] .media-control-layer[data-controls]{height:25px!important;background-color:rgba(0,0,0,.31)}.media-control[data-media-control] .media-control-layer[data-controls] .bar-container[data-seekbar]{top:-14px}
+.container[data-container] span{display:none}
+</style>
+<div style="display:none" class="histats">
+<div style="display:none" id="histats_counter"></div>
+<script type="text/javascript">var _Hasync= _Hasync|| [];
+_Hasync.push(['Histats.start', '1,4388745,4,24,200,50,00011111']);
+_Hasync.push(['Histats.fasi', '1']);
+_Hasync.push(['Histats.track_hits', '']);
+(function() {
+var hs = document.createElement('script'); hs.type = 'text/javascript'; hs.async = true;
+hs.src = ('//s10.histats.com/js15_as.js');
+(document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(hs);
+})();</script>
+<noscript><a  style="display:none" href="/" target="_blank"><img  src="//sstatic1.histats.com/0.gif?4388745&101" alt="site traffic analytics" border="0"/></a></noscript>
+</div>
+</body>
